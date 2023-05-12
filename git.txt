@@ -1,0 +1,32 @@
+git init  ---> Initializes empty git repository which is hidden use ls -a to see.
+
+git add . ---> add all files
+
+git commit -m "ds"
+
+git branch -M main
+
+git remote set-url origin https://suriyagokul@github.com/suriyagokul/rnTwitter.git
+
+    rnTwitter - reponame,  suriyagokul - username
+
+we can use set-url or add
+
+
+git push -u origin main
+
+git status ---> to see untracked files
+
+
+By default git will be preinstalled in macintosh.
+
+Global Configuration ---> 
+
+
+$ git config --global user.name "John Doe"
+$ git config --global user.email johndoe@example.com
+$ git config --global --edit      ----> Opens vim editor by default and press i to insert and esc:wq to exit
+$ git config --list
+$ git config user.email 
+$ git config --global commit.template relative-path-from-repository-root  ---> To set custom commit message. We have to write msg in that file.
+$ git help 

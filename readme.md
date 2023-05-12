@@ -1,4 +1,4 @@
-# Full Stack Ineuron Markdown
+# Markdown
 
 ## heading 2 using two hashes /##
 ### heading 3
