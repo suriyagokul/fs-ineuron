@@ -1,0 +1,40 @@
+Media Queries
+
+	To work with screen sizes making responsive..
+
+Extra small devices 0-480px	      smaller Phones
+Small               481-768px	      Tablets&larger smartphones
+Medium              769-1279px	Laptops & small desktops
+Large               >1280px         Larger Desktops & Monitors
+
+
+flex is one direction 
+
+Grid is two direction
+
+Grid : multiple rows and multiple columns..
+
+	Ex of grid: Mobile Gallery
+
+      display:grid
+
+      grid-template-columns: 100px 100px 100px gives 3 columns with space in between is 100px.
+
+	we can write above as--->  grid-template-columns:repeat(3, 1fr) repeat 3 columns which have to take equal width and height i.e 1 fraction...
+
+	row-gap:100px
+
+	column-gap:100px
+
+	grid-column-start:1
+
+	grid-column-end:3
+
+	grid-row-start:1
+
+	grid-row-end:3
+
+Grid Game Website: 
+
+	cssgridgarden
+

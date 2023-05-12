@@ -1,0 +1,79 @@
+/* You can not modify anything in the HTML */
+/* You can only modify the CSS file */
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+}
+ul {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+}
+
+div.button-group button {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+div.button-group button,
+.btn {
+  padding: 15px 20px 15px 20px;
+  background-color: #5955b3;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid white;
+}
+
+div.button-group button:hover,
+.btn:hover {
+  cursor: pointer;
+  background-color: #6361aa;
+}
+
+.text-color {
+  color: #b3b3b3;
+}
+
+.list-item {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+.list-item:hover {
+  cursor: pointer;
+  color: green;
+}
+
+.banner-container {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.heading-text {
+  font-weight: bold;
+  color: #3c2f60;
+  font-size: 64px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 span {
+  color: #5955b3;
+}
+
+div div div img {
+  width: 648px;
+  height: 506px;
+}
+
+.description {
+  color: #b3b3b3;
+  font-size: 24px;
+  line-height: 30px;
+}

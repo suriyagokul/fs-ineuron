@@ -1,0 +1,38 @@
+we have different frameworks like ---> 
+
+	Bootstrap
+
+	Material CSS
+
+	Tailwind
+
+Tailwind is utility first css that means u do one task at a time. 
+
+	Timestamp 27:00
+
+In Tailwind ur classes always acts for mobile devices first incase u want for bigger screens u have to add for it.. 
+
+	Timestamp: 47:00
+
+	EX- class="text-center md:text-left"
+
+		on smaller devices text is center for medium and above devices text is on left.
+
+
+DIFFERENCE BOOTSTRAP VS TAILWIND  Timestamp: 01:00:00
+
+	In the bootstrap we always go and link the file no matter what the css we are using, what the css we are not using all the css will load up.
+
+	But for tailwind only the classes we have written the equivalent css will generate that only.not loads entire css loads for what we have used.
+
+	So, Tailwind which is less weight when we used with npm
+
+
+"tailwind mobile first."
+
+upto 640 mobile devices
+
+sm means from 640 and above
+
+md means from 768 and above
+	

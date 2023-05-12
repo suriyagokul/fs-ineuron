@@ -1,0 +1,71 @@
+useful websites links - 
+
+	image-map	
+
+	uipicker
+
+create a vertical line: 
+
+	border-left: 2px solid #7f7f7f;
+  	height: 60px;
+	
+css selectors
+
+	Universal selector
+
+	individual
+
+	group
+
+	inside element
+
+	sibling
+
+	pseudo selectors	
+	
+		:hover
+
+		::before or :before
+
+		::after or :after
+
+	before after useful for showing tooltips
+
+a:visited - if we visited link change color
+
+a:link     - if we not visited link change color
+
+input:focus
+
+li:nth-child(even) - change bg color of even numbered item
+
+li:first-child
+
+li:last-child
+
+border: 2px dotted black or 2px solid black 
+
+
+/* Apply to all four sides */
+padding: 1em;
+
+/* top and bottom | left and right */
+padding: 5% 10%;
+
+/* top | left and right | bottom */
+padding: 1em 2em 2em;
+
+/* top | right | bottom | left */
+padding: 5px 1em 0 2em;
+
+ul>li*5  ---> ul with 5 li tags
+
+list-style-type:lower-alpha, upper-alpha, circle, upper-roman.
+
+positon: static,fixed,sticky,absolute,relative
+
+when we give fixed position when we scroll it doesn't scroll it's position is fixed. static will scroll.
+
+float:left,right,none,inherit
+
+float right moves to right of the page.

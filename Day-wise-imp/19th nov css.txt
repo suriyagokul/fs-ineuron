@@ -1,0 +1,74 @@
+About Positions Relative and abosulute 19th nov Timestamp ----> 37:00
+
+Sticky vs fixed 20th nov Timestamp ----> 19
+
+Css Topics till now 
+
+	selectors
+
+	pseudo
+
+	nth child
+
+	float 
+
+	border
+
+	margin and padding
+
+	text
+
+	height and width
+
+	forms
+
+	block and inline
+	
+website all about css - 
+
+	css-tricks
+
+website 
+
+	excalidraw.com
+
+positon:fixed used in click here to chat in websites, tweet button in twitter app..
+
+position:sticky used as navbar in websites...
+
+    <h4>Orey Sticky Navbaruu</h4>
+    h4 {
+ 	background: red;
+ 	width: 150px;
+ 	height: 100px;
+  	position: sticky;
+  	top:20px;
+	}
+
+Flex ------->
+
+	By default all content will come one by one in separate lines horizontally to make them vertically we use
+	
+		display: flex  By default flex-direction: row
+
+		flex-direction:row-reverse
+
+		flex-direction:column-reverse
+
+JustifyContent: flex-start, flex-end, center, space-between, space-around,space-evenly.(vertically)
+
+alignitems:center (horizontally)
+
+flex-wrap:wrap which makes all contents inside the container..If we wan to make mobile responsive then it will wrap. Inspect and decrease size of window it will show responsive content.
+
+gap: 50px; giving space between content
+
+flex-grow:2 which will increase the size for that particular content.
+
+align-self:center a single child to make center horizontally.
+
+	Ex: word-wrap in visual studio code. In vscode view>word-wrap
+
+website (game) - 
+
+	flexbox-froggy

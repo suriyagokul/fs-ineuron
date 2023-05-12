@@ -1,0 +1,43 @@
+Editors:
+
+sublime text
+atom
+vs code
+fleet from jetbrains
+neurolab
+
+index.htm or index.html
+
+by default server looks for index.html or default.html file.
+
+Server is a software which serves.
+
+web servers: 
+
+	Apache
+
+	nginx
+
+In hosting services like hostinger, godaddy they uses these apache servers in backend which gives path as /var/html/www and domain name like hc.com/
+
+whenever user hits this hc.com/ we have to show something default right so they by default looks for index.html or default.html.
+
+double click index.html whenever changes occurs it not change automatically we have to reload it.
+
+so there is a software or piece of code which checks for any update in the code then it will automatically reloads the page which is done by a "Live Server".
+
+Live server by rithwik dey and live server preview in vs code extension.
+
+ctrl+shift+p and type live server and open.
+
+title attribute for tags on hover it shows that title.
+
+for images websites - 
+
+	unsplash, pexels
+
+writing articles - 
+
+	hashnode
+	dev.to
+	medium
