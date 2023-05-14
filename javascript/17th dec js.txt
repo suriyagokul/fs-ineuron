@@ -1,0 +1,46 @@
+const actors = ["allu", "mahesh","pavan","charan"];
+
+console.log(actors); 
+console.log(actors.length) // 4
+
+// we can create array using new shown below but not recommended
+
+const players = new Array('Rohit', 'Virat');
+console.log(players);- // [ 'Rohit', 'Virat' ]
+
+console.log(actors.push('prabhas')); // 5 gives length of array
+
+actors.push('chaitu'); // pushes end
+
+console.log(actors); 
+// [ 'allu', 'mahesh', 'pavan', 'charan', 'prabhas', 'chaitu' ]
+
+console.log(actors.pop()); // pops last element
+
+    // o/p:chaitu  gives popped element
+
+console.log(actors); 
+    //[ 'allu', 'mahesh', 'pavan', 'charan', 'prabhas' ]
+    
+// Slice
+
+    console.log(actors.slice(1,3)) 
+        
+        // gives 1st and 2nd element. 3rd element is excluded
+    
+    //o/p: [ 'mahesh', 'pavan' ]
+    
+// Splice
+
+actors.splice(2,0,'ntr'); 
+    
+    // adds ntr at 2nd pos without deleting anything..
+    
+    // 0 means not to remove any element
+    
+    // o/p: [ 'allu', 'mahesh', 'ntr', 'pavan', 'charan', 'prabhas' ]
+
+
+console.log(actors);
+
+

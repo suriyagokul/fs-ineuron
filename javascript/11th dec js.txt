@@ -1,0 +1,99 @@
+Conditions
+
+
+	if/else
+
+	switch
+
+	Ternary Operator / Ternary conditions
+
+		Ex-- User login, logout
+
+
+Date
+
+const date = new Date();
+
+console.log(date); 
+
+    // o/p: 2023-05-14T11:15:31.572z i.e 14th of may 2023
+
+console.log(date.getFullYear());  
+
+    // o/p: 2023
+
+console.log(date.getMonth()); 
+    
+    // o/p:4 month starts from 0 
+
+console.log(date.getDay());   
+    
+    // o/p: 0  day starts from 0 i.e sunday
+    
+console.log(date.getTime());
+
+    //o/p: 1684063085360   in milliseconds
+    
+console.log(date.getHours()); 
+
+    // Given in gmt format. 
+    // To get IST We have to add 5hrs 30 mins to it.
+
+console.log(date.getMinutes());
+
+console.log(date.getSeconds());
+
+
+
+Math
+
+
+console.log(Math.PI); //o/p:  3.141592653589793
+
+console.log(Math.round(3.145667));   //o/p: 3
+
+console.log(Math.floor(3.145667));   //o/p: 3
+
+console.log(Math.ceil(3.145667));    //o/p: 4
+
+console.log(Math.min(10,20,121,3,0.2)); //o/p: 0.2
+
+console.log(Math.max(10,20,121,3,88.9)); // o/p: 121
+
+console.log(Math.random()); // ex o/p: 0.9213871377230931
+
+    // gives random between 0-0.9999999
+    
+console.log(Math.random() * 10);
+
+    // between 0-9
+
+console.log(Math.random() * 100);  0-99
+
+console.log(Math.random() * (100-50) + 50);
+
+    // syntax to give random number between range 
+        
+    // (Math.random() * (max-min) + min)
+    
+    // Above Ex 50-100  
+    
+console.log(Math.pow(3,3))  //o/p: 27
+
+console.log(Math.log(2));
+
+console.log(Math.sin(90));
+
+
+
+Loops
+
+
+	For 
+
+	While      Checks con first and then executes
+	
+	do-while   Executes first and then check condition
+
+
+
