@@ -1,0 +1,126 @@
+JS HISTORY
+
+
+	MOCHA ----> LIVESCRIPT ----> JAVASCRIPT
+
+
+	JavaScript was invented by Brendan Eich in 1995. 
+	
+	It was developed for Netscape 2, and became the ECMA-262 standard in 1997.
+
+	In starting it is only supported for Netscape 2
+
+	But at that there are 2 major browsers that is IE and Netscape.
+
+	JS is used for browser functonality to support all the browsers they brought ECMA into Picture.
+
+	ECMA (formally European Computer Manufacturers Association) is an organization that develops standards in computer hardware, 
+	communications, and programming languages.
+
+	ES6 is the one of the finest standard till now which is published in 2015..
+
+	ES6 has many important features which has taken..
+
+
+To run js programs we must have node js installed.Otherwise we have to see output in browser console only..
+
+
+Node is run time environment to run our js programs..
+
+Run JS CODE ---> 
+
+
+	node filename.js
+
+To print on terminal we have to use ---> 
+
+	console.log("hello world");
+
+
+JS Prmitive DataTypes   
+
+	Prmitive ===> Stores only one value
+
+
+	Number   Ex-1,1.5
+	
+	String   Ex-"name", 'age'
+
+	Boolean  Ex- true, false 
+	
+	  The name boolean comes from George Boole, an English mathematician in the 19th century, developed "Boolean Logic"
+
+	null       i.e nothing
+
+	undefined  one of the example for ---> if an variable is not assigned then its said to be undefined
+
+
+JS Non Primitive DataTypes   Can Store multiple values
+	 
+	Array  Ex-[1,2,3] [1,"hi",2.5]
+
+	Object 
+
+		Ex-{
+
+			name:'surya',
+
+			age:23
+		    }
+
+
+JS Operators 
+
+
+Arithmetic    (+ _ * / % ** ++ --)
+
+Comparison    (== ==== != !== > < >= <=)
+
+Assignment    (=, +=, -= ...)
+
+Conditional /Ternary  (? :)
+
+Logical   (&&, ||, !)
+
+
+	From Es6 ---> 
+
+		Spread and Rest Operators are added
+
+
+JS VARIABLES 
+
+	We have var to declare variables before ES6. But ES6 introduced two new methods  to declare variables they are let and const...
+
+	Total 4 methods to declare variables
+
+		Using var
+		Using let
+		Using const
+		Using nothing	
+
+	var --> function-scoped  can re-declare values     
+
+	let --> block-scoped     cannot re-declare values
+
+	const --> block-scoped   cannot re-declare values
+
+	let Doesn't Allow Hoisting that means
+
+		a=10;
+		let a; // error 
+
+	we can do this hoisting with var
+
+	const a;
+	a=10;    // error we have to assign it like const a=10... we can do it with let, var
+
+	 
+
+JS Template Literals 
+
+	Feature of ES6
+
+	EX- let a=10;
+
+	    console.log(`Value is: ${a}`);

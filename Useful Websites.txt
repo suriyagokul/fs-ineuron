@@ -7,6 +7,9 @@ https://uicolorpicker.com/   --->  To get color codes
 https://icons8.com/icons/
 
 
+https://shields.io/          --->  To create badges and get links,svgs 
+
+
 https://www.image-map.net/   --->  To get coordinates in any image
 
 https://www.pexels.com/      --->  Free Stock photos
