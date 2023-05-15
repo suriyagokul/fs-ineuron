@@ -21,3 +21,14 @@ https://css-tricks.com/      --->  Name itself suggests
 https://excalidraw.com/      --->  Whiteboard
 
 ColorZilla Chrome Extension to get colocr code in any site..
+
+
+Fun websites based on DOM events: 
+
+https://patatap.com/
+
+https://neal.fun/space-elevator/
+
+https://buildresume.in/edit/template-1       changes inner text... 
+
+	// Can give users to change inner text but not innerHTML. It will be security issues if html code changes... 
