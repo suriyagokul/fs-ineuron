@@ -44,3 +44,155 @@ actors.splice(2,0,'ntr');
 console.log(actors);
 
 
+
+//concatenation
+
+const arr1 = [1,2,3];
+const arr2 = [4,5,6];
+const arr3 = [10,20,30];
+
+console.log(arr1.concat(arr2)) //o/p: [ 1, 2, 3, 4, 5, 6 ]
+
+console.log(arr1.concat(arr2, arr3))
+
+/* o/p: [
+  1,  2,  3,  4, 5,
+  6, 10, 20, 30
+]
+*/
+
+// fill
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+fruits.fill("apple") // o/p: [ 'apple', 'apple', 'apple','apple']
+console.log(fruits);
+
+fruits.fill("pears",0,1)
+console.log(fruits); // o/p: [ 'pears', 'apple', 'apple','apple']
+
+fruits.fill("pears", "avocado",3)
+console.log(fruits); //o/p: [ 'pears', 'pears', 'pears','apple']
+
+// includes
+
+const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+console.log(fruits2.includes("Mango")); 
+
+    // o/p: true  case sensitive
+
+console.log(fruits2.includes("Mango",3));
+
+    // checks mango is at index 3
+    
+// indexOf
+
+console.log(fruits2.indexOf("Mango")) //o/p: 3
+
+    // if not present gives index -1
+    
+// isArray
+
+console.log(Array.isArray(fruits2)); //o/p: true
+
+// join
+
+const arr = [1,2,3,4];
+
+let new_arr = arr.join('-') 
+console.log(new_arr);    //o/p: 1-2-3-4
+console.log(typeof new_arr); //o/p: string
+
+// pop
+const arr5 = [1,2,3,4];
+console.log(arr5.pop()) //o/p: 4
+console.log(arr5)  //o/p: [ 1, 2, 3 ]
+
+//lastIndexOf
+
+const names = ['sai','suriya','joradn','sai','john'];
+console.log(names.lastIndexOf('sai')) //o/p: 3
+
+// reverse
+
+console.log(names.reverse()) 
+
+    //o/p: [ 'john', 'sai', 'joradn', 'suriya', 'sai' ]
+    
+// map
+
+const arr6 = [1,2,3,4, 5];
+console.log(arr6.map(Math.pow)) 
+    //o/p: [ 1, 2, 9, 64, 625 ] 1^0, 2^1, 3^2, 4^3, 5^4
+
+
+// unshift
+
+const playing_11 = ["ro", "green", "wadera"];
+
+console.log(playing_11.unshift('ishan')) 
+    //o/p:5 gives length of array
+    
+console.log(playing_11) 
+    //o/p: [ 'ishan', 'ro', 'green', 'wadera' ]
+
+// sort
+
+console.log(playing_11.sort());
+
+    //o/p: [ 'green', 'ishan', 'ro', 'wadera' ]
+    
+/* split 
+    
+    join  ---> (array to string)
+    split ---> (string to array)
+*/
+
+const name = "vinod";
+
+console.log(name.split('')); 
+
+    //o/p: [ 'v', 'i', 'n', 'o', 'd' ]
+    
+    // If there is no space b/w characters then split...
+    
+console.log(name); //o/p: vinod
+    
+    // not modify on original array
+    
+// reversing string. name='vinod'
+
+
+console.log(name.split('').reverse().join('')); 
+
+    //o/p: doniv
+
+// forof
+
+for (let fruit of fruits){
+    // console.log(fruit.toUpperCase())
+}
+
+// break and continue
+
+for(let fruit of fruits){
+    if(fruit == "apple"){
+        break;
+    }
+    // console.log(fruit)
+}
+
+
+for(let fruit of fruits){
+    if(fruit == "apple"){
+        continue;
+    }
+    console.log(fruit)
+}
+
+
+IMP:: join and split opposite...
+
+
+
+

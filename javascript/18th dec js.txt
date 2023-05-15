@@ -1,0 +1,54 @@
+Functions
+
+
+function sum(a,b){
+    return a+b;
+}
+console.log(sum(10,20));
+
+function mul(){
+    // js has by default have arguments
+    let value=1;
+    for(let number of arguments){
+        value*=number;
+    }
+    return value;
+}
+
+let total = mul(1,2,3,4,5);
+console.log(total);
+
+// arrow function
+let mod = (a,b) => {
+    return a%b;
+}
+
+console.log(mod(8,2))
+
+
+// Object
+
+
+let userName = {
+    fname:'anurag',
+    lname:'tiwari'
+}
+
+console.log(userName);
+
+    //o/p: { fname: 'anurag', lname: 'tiwari' }
+
+console.log(userName.lname);
+
+userName.lname = "chaudary";
+console.log(userName);
+
+for(let x in userName){
+    console.log(x);  // get all keys in an object
+    //o/p: fname lname
+}
+
+// for of can't use with object
+// for(let x of userName){
+//     console.log(x); // o/p: TypeError: userName is not iterable
+// } 

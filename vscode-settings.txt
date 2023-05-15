@@ -63,3 +63,7 @@ Theme -
 
 
 	Material Theme ("Material Theme Darker High Contrast")
+
+// To open emojis 
+
+Windows . to open emoji board
