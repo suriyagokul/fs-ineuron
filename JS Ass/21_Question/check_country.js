@@ -1,4 +1,4 @@
-import { countries } from "../Question 19/countries.js";
+import { countries } from "../19_Question/countries.js";
 
 let exist = countries.includes("Ethiopia");
 
