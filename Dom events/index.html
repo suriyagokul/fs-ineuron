@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="header1" name="fchild">Hello DOM DOCUMENT OBJECT MODEL</h1>
+    <p id="para1">
+      The HTML DOM is a standard object model and programming interface for
+      HTML. It defines: The HTML elements as objects. The properties of all HTML
+      elements. The methods to access all HTML elements. The events for all HTML
+      elements. <span>In other words: The HTML DOM is a standard for </span> how
+      to get, change, add, or delete HTML elements.
+    </p>
+    <p id="para2">
+      getElementsByClassName method returns a collection of elements with the
+      specified class name, even if there is only one element with that class.
+      Therefore, you need to access the element at the specific index within the
+      collection to retrieve its innerHTML property.
+    </p>
+
+    <script>
+      console.log(window); // window object contains alert,confirm,prompt,deocument etccc... many more props
+      console.log(document);
+      console.log(document.head, document.body);
+      let header = document.getElementsByClassName("header1")[0];
+      // refer above p tag.. If wenot give 0 o/p: undefined
+      console.log(header.innerHTML);
+      let p2 = document.getElementById("para2");
+      console.log(p2.innerHTML);
+      /* innerhtml vs innertext
+            innerhtml gives with html tags if nested tags whereas innertext gives only text inside it...
+        */
+      let p1 = document.getElementById("para1").innerHTML;
+      console.log(p1); // gives with span tags also..
+
+      let fchild = document.getElementsByName("fchild")[0].innerHTML;
+      console.log(fchild); //
+
+      document.getElementsByTagName("span")[0].style.backgroundColor = "red";
+
+      //   alert("hello world!");
+
+      //   let name = prompt("enter ur name...");
+      //   document.getElementsByClassName("header1")[0].innerHTML = name;
+
+      let bool_val = confirm("Confirm that your age is 18+");
+      bool_val
+        ? (document.getElementsByClassName("header1")[0].innerHTML = "Above 18")
+        : (document.getElementsByClassName("header1")[0].innerHTML =
+            "Below 18");
+
+      let link = document.createElement("a");
+      link.href = "https://github.com/suriyagokul";
+      link.textContent = "Link";
+      link.style.fontStyle = "italic";
+      document.body.appendChild(link);
+
+      document.body.removeChild(link);
+    </script>
+  </body>
+</html>

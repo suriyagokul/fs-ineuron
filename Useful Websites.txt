@@ -10,6 +10,9 @@ https://icons8.com/icons/
 https://shields.io/          --->  To create badges and get links,svgs 
 
 
+https://fritscher.ch/dom-css/  ---> Dom Visualizer
+
+
 https://www.image-map.net/   --->  To get coordinates in any image
 
 https://www.pexels.com/      --->  Free Stock photos
@@ -32,3 +35,4 @@ https://neal.fun/space-elevator/
 https://buildresume.in/edit/template-1       changes inner text... 
 
 	// Can give users to change inner text but not innerHTML. It will be security issues if html code changes... 
+

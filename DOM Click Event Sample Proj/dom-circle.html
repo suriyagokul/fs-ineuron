@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Example</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .active {
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+      }
+    </style>
+  </head>
+  <body
+    class="h-[1500px] mt-4 bg-black"
+    <!--
+    animate-gradient-x
+    rounded-lg
+    bg-gradient-to-r
+    from-blue-500
+    via-green-500
+    to-purple-500
+    duration-500
+    --
+  >
+    >
+    <center style="margin-top: 4px">
+      <h1
+        class="mb-4 text-white bg-sky-600 py-4 px-6 rounded-md cursor-pointer hover:bg-sky-300 w-[400px]"
+      >
+        Tap Anywhere below
+      </h1>
+    </center>
+
+    <script>
+      let body = document.querySelector("body");
+      body.addEventListener("click", function (event) {
+        let element = document.createElement("div");
+        element.classList.add("active");
+        element.style.left = event.clientX + "px";
+        element.style.top = event.clientY + "px";
+        body.appendChild(element);
+        var audio = new Audio();
+        audio.src = "./tap.mp3"; // Replace with your sound file URL
+        audio.style.display = "none"; // Hide the audio player controls
+        audio.play();
+      });
+    </script>
+  </body>
+</html>

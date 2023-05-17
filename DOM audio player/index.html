@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="h-[1500px]  animate-gradient-x rounded-lg bg-gradient-to-r from-blue-500 via-green-500 to-purple-500 duration-500  "> //transition duration-600 transform hover:scale-150
+	<center>
+		<h1 class="mt-3 text-white bg-sky-600 py-4 px-6 rounded-md cursor-pointer hover:bg-sky-300 w-[400px] ">Tap Anywhere below</h1>
+		<div class=""></div>
+	</center>
+	<script>
+		const body = document.querySelector("body");
+		const div = document.querySelector("div");
+		let audio = null;
+
+		body.addEventListener('click', function() {
+			if (!audio) {
+				audio = document.createElement("audio");
+				audio.src = "./chiru.mp3";
+				audio.controls = true;
+				audio.autoplay = true;
+				audio.innerHTML = "your browser not supported";
+				div.appendChild(audio);
+				audio.addEventListener('ended', function() {
+					audio = null;
+				});
+			}
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button>Click me</button>
+
+    <script>
+      let btn = document.querySelector("button");
+      btn.addEventListener("click", changeColor);
+
+      function changeColor() {
+        let code = "0123456789ABCDEF";
+        let symbol = "#";
+        for (let i = 0; i < 6; i++) {
+          symbol += Math.floor(Math.random() * 10);
+        }
+        document.body.style.backgroundColor = symbol;
+      }
+    </script>
+  </body>
+</html>
