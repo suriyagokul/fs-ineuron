@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <style>
+      .line {
+        border-left: 3px solid gray;
+        height: 180px;
+      }
+    </style>
+  </head>
+  <body
+    class="flex flex-col items-center h-[100vh] bg-[#B6B6B6] font-[Poppins]"
+  >
+    <main class="flex flex-col items-center border-none w-full px-24">
+      <div class="flex items-center h-[100vh] w-full">
+        <form
+          onsubmit="getData(event)"
+          class="relative bg-[url('./nature1.jpg')] h-[70vh] w-[60%] bg-center bg-cover rounded-3xl shadow-xl"
+        >
+          <h3 class="ml-4 mt-5 text-gray-500">forecast</h3>
+          <div
+            class="flex flex-row items-center absolute top-0 right-20 mr-3 mt-5 bg-[#787F7D] px-3 py-1 rounded-lg"
+          >
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mr-1"
+            >
+              <path
+                fill="#fff"
+                fill-rule="evenodd"
+                d="M893,108 C889.134158,108 886.00001,111.145455 886.00001,115.026364 C885.998199,116.705455 886.246323,117.869091 887.196257,119.395455 C888.146191,120.920909 893,128 893,128 C893,128 897.853809,120.920909 898.803743,119.395455 C899.753677,117.869091 900.001801,116.705455 899.99999,115.026364 C899.99999,111.145455 896.865842,108 893,108 L893,108 Z M893.015749,118.636364 L892.999999,118.636364 L892.984249,118.636364 C891.057501,118.636364 889.497378,117.162864 889.500003,115.131989 C889.502628,113.100239 891.067126,111.636364 892.994749,111.636364 L892.999999,111.636364 L893.006124,111.636364 C894.932871,111.636364 896.497369,113.100239 896.499994,115.131989 C896.503494,117.162864 894.942496,118.636364 893.015749,118.636364 L893.015749,118.636364 Z"
+                transform="translate(-881 -106)"
+              />
+            </svg>
+            <div class="flex flex-col">
+              <small class="text-xs text-[#a8afad]">current location</small>
+              <p class="text-[12px] text-white" id="uppercity">--------</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-center h-full">
+            <input
+              type="text"
+              name=""
+              id="inputBox"
+              placeholder="Enter location"
+              class="mb-3 border-none rounded-sm w-[40%] py-1 px-2 bg-[#7CA09F] placeholder-white opacity-75 focus:outline-none"
+            />
+            <button
+              class="bg-rose-500 ml-3 mb-3 rounded-lg text-white px-4 py-1 hover:bg-rose-600"
+            >
+              Search
+            </button>
+          </div>
+        </form>
+        <div
+          class="flex py-10 px-10 w-[40%] shadow-xl bg-white h-[70vh] rounded-3xl z[-1]"
+        >
+          <div class="flex flex-col">
+            <h1 class="font-bold text-4xl">Today</h1>
+            <div
+              class="flex mt-4 ml-3 shadow-md rounded-md px-5 py-4 z-[2] w-full"
+            >
+              <div class="w-[50%]">
+                <h1 id="temp" class="text-3xl font-bold text-black"></h1>
+                <p id="type" class="text-lg mt-2 mb-2"></p>
+                <p id="date" class="text-xs w-full"></p>
+              </div>
+              <div id="line" class="mr-4 ml-5"></div>
+              <div class="w-[50%] text-sm text-gray-500">
+                <p id="details1" class="mb-2"></p>
+                <p id="details2" class="mb-2"></p>
+                <p id="details3" class="mb-2"></p>
+                <p id="details4" class="mb-2"></p>
+                <p id="details5" class="mb-2"></p>
+                <p id="details6" class="mb-2"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      let inputBox = document.getElementById("inputBox");
+      let country = document.getElementById("country");
+      let temp = document.getElementById("temp");
+      let type = document.getElementById("type");
+      let getDate = document.getElementById("date");
+
+      let realfeel = document.getElementById("details1");
+      let humidity = document.getElementById("details2");
+      let uv = document.getElementById("details3");
+      let visibility = document.getElementById("details4");
+      let wind = document.getElementById("details5");
+      let pressure = document.getElementById("details6");
+      let v_line = document.getElementById("line");
+
+      let days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+      const monthNames = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+
+      const getData = async (event) => {
+        event.preventDefault();
+        const nameuu = inputBox.value;
+        if (!inputBox.value) {
+          alert("Please enter city name");
+          return;
+        }
+        let res = await fetch(
+          `https://api.weatherapi.com/v1/current.json?key=9f6af9029792472db8162018231805&q=${nameuu}`
+        );
+        if (res.status == 400) {
+          alert("Please enter correct city name");
+          return;
+        }
+        const data = await res.json();
+        console.log(data);
+        const location = data.location;
+        const current = data.current;
+
+        let d = new Date();
+
+        let dayName = days[d.getDay()];
+        let monthName = monthNames[d.getMonth()];
+
+        let date = d.getDate();
+        let year = d.getFullYear();
+        let str = `${dayName} ${date}, ${monthName}' ${year
+          .toString()
+          .slice(2)}`;
+        let RealFeel = `RealFeel ${current.feelslike_c}`;
+        let h = `Humidity ${current.humidity}`;
+        let uv_index = `UV Index ${current.uv}`;
+        let vis = `Visibility ${current.vis_km}`;
+        let w = `Wind ${current.wind_kph}`;
+        let p = `Pressure ${current.pressure_in}`;
+        let current_temp = `${current.temp_c} °`;
+
+        temp.innerHTML = current_temp;
+
+        uppercity.innerHTML = location.name;
+        type.innerHTML = current.condition.text;
+        getDate.innerHTML = str;
+
+        realfeel.innerHTML = RealFeel;
+        humidity.innerHTML = h;
+        uv.innerHTML = uv_index;
+        visibility.innerHTML = vis;
+        wind.innerHTML = w;
+        pressure.innerHTML = p;
+        v_line.classList.add("line");
+      };
+    </script>
+  </body>
+</html>
