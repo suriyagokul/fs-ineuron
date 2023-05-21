@@ -98,6 +98,7 @@
       let temp = document.getElementById("temp");
       let type = document.getElementById("type");
       let getDate = document.getElementById("date");
+      let uppercity = document.getElementById("uppercity");
 
       let realfeel = document.getElementById("details1");
       let humidity = document.getElementById("details2");
@@ -131,6 +132,17 @@
         "December",
       ];
 
+      window.addEventListener("DOMContentLoaded", () => {
+        const savedLocation = localStorage.getItem("loc_name");
+        if (savedLocation) {
+          inputBox.value = savedLocation;
+          uppercity.innerHTML = savedLocation;
+          temp.innerHTML = localStorage.getItem("Temperature");
+          type.innerHTML = localStorage.getItem("Type");
+          getDate.innerHTML = localStorage.getItem("Date");
+        }
+      });
+
       const getData = async (event) => {
         event.preventDefault();
         const nameuu = inputBox.value;
@@ -138,6 +150,7 @@
           alert("Please enter city name");
           return;
         }
+        localStorage.setItem("loc_name", nameuu);
         let res = await fetch(
           `https://api.weatherapi.com/v1/current.json?key=9f6af9029792472db8162018231805&q=${nameuu}`
         );
@@ -168,9 +181,13 @@
         let p = `Pressure ${current.pressure_in}`;
         let current_temp = `${current.temp_c} °`;
 
-        temp.innerHTML = current_temp;
+        localStorage.setItem("Temperature", current_temp);
+        localStorage.setItem("Type", current.condition.text);
+
+        localStorage.setItem("Date", str);
 
         uppercity.innerHTML = location.name;
+        temp.innerHTML = current_temp;
         type.innerHTML = current.condition.text;
         getDate.innerHTML = str;
 

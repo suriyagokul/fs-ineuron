@@ -1,0 +1,29 @@
+In class-based components, the equivalent lifecycle methods to useEffect are as follows:
+
+componentDidMount: This method is called immediately after the component is mounted (inserted into the DOM). It is equivalent to the effect with an empty dependency array ([]). You can perform any initial setup, API calls, or subscriptions in this method.
+
+	useEffect(()=>{
+
+		},[]) // runs only first time when component is mounted
+
+componentDidUpdate: This method is called after the component's updates are flushed to the DOM. It is equivalent to the effect without a dependency array. You can perform side effects, such as making API requests based on prop or state changes, in this method. However, you need to carefully check the conditions to avoid infinite loops.
+
+	useEffect(()=>{
+
+		}) // runs everytime if component updates
+
+	and 
+
+	useEffect(() => {}, [count]) // comes in this only.. whenever count updates it will run..
+
+componentWillUnmount: This method is called immediately before the component is unmounted and destroyed. It is used to perform cleanup operations such as canceling API requests or removing event listeners.
+
+	useEffect(() => {
+
+	    // Cleanup function
+   		 return () => {
+      		console.log("In cleanup function");
+      		// Perform any necessary cleanup operations here
+      		// For example, canceling an ongoing API request or clearing subscriptions.
+    		};
+  }, []);

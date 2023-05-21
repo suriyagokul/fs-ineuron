@@ -9,6 +9,8 @@ It's not rerendering whenever notifications seen by user..
 
 To solve this they brought up react which automatically re renders the particular element of dom which got changed..
 
+Jordan walkie in 2013 came up with this react...
+
 React is so faster because -->
 
 

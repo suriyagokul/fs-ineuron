@@ -1,0 +1,28 @@
+React Strict Mode renders components twice on dev server..
+
+npx create-react-app .
+
+	creates react app in current folder
+
+
+Dependency Chaining
+
+
+	{data.news?.map((item) => (
+       	<p>{JSON.stringify(item)}</p>
+	))}
+
+	Whenever we are accessing nested objects like data.news.map we have to check do if it exists only...Like
+
+	data.news?.map  only map if data.news is there... because may be t running first there will be no data and if we using map then it shows error.
+
+
+ <p>{data}</p> // gives error Object is not valid as a react child.
+          
+		When you try to render an entire object inside a <p> element in React, you will encounter an error because React expects a string or JSX 				expression as its child, not an object.
+          
+		If you want to display the entire object in the <p> element for debugging purposes or to see the object's structure, you can convert the object to 		a string using the JSON.stringify() method. 
+         
+		Jsx doesn't expect the object we have to convert it to a string to display the object.. 
+
+	We have to stringify it <p>{JSON.stringify(data)}</p>
