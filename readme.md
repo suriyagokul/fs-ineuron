@@ -1,5 +1,23 @@
 # Markdown
 
+## My Projects 
+
+	1) https://taptap-one.vercel.app/
+	
+	2) https://digicounter.vercel.app/
+
+	3) https://forecastsimple.vercel.app/
+
+	4) https://vscode-clone-tailwind.vercel.app/
+
+## My Articles
+	
+	1) https://html-article.hashnode.dev/htmlcss
+
+	2) https://html-article.hashnode.dev/react-router-dom
+
+	3) https://html-article.hashnode.dev/add-custom-fonts-to-tailwindcss 
+
 ## heading 2 using two hashes /##
 ### heading 3
 #### heading 4
