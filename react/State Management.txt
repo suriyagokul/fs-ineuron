@@ -1,0 +1,81 @@
+State Management
+
+	If we have componentA which calls componentB and again componentB calls componentC and again in that we call componentD..
+
+	Now the problem comes if we pass data from componentA to componentD... We have to pass data to each and every component i.e prop drilling a problem..
+
+	So we need to maintain state management in different ways..
+
+	Like --> 
+
+		Context API
+	
+		ZUSTAND
+
+		REDUX
+
+		REDUX TOOLKIT 
+
+		FLUX
+
+		REACT QUERY
+
+Flux which comes earlier of all these.. And whatever these state management libraries are inspiration of flux..
+
+		
+redux --- react-redux
+
+	redux is a state management library 
+
+	react redux is bindings for react.. Because redux not only works with react we can use it for any other libraries like vue ...etc
+
+		So we are saying redux to bind it for react..
+
+We can create redux store in many ways as a best practice --
+
+	1) store folder > store.js
+
+	2) store folder > index.js
+
+	3) app folder > index.js
+
+	4) index.js in src
+
+	we can do it in any other way as our comfort
+
+We are using redux toolkit..
+
+REDUX VS REDUX TOOLKIT
+	
+	In REDUX ---> we need to define action types for everything and in reducer we need to match the action types using switch case..
+ 
+		Too much code to configure Store to optimized levels/best practices	
+		Too much boilerplate code makes code less clean and efficient
+		Too many packages needed to install to build scalable apps
+		Writing actions and reducers becomes more complex and cumbersome in huge applications
+
+		To address these challenge, the Redux team came up with Redux Toolkit, the official recommended approach for writing Redux logic. 
+		It aims to speed up Redux development by including Redux Core with the packages that they think are essential to build a Redux app.
+
+
+First we have to install @reduxjs/toolkit
+
+In store.js import configurestore and initialize with object consists of reducer.. And export store
+
+import this store in index.js and Provider from react-redux
+
+	<Provider store={store}>
+		<App />
+	</Provider>
+
+Create folder named features/counter counterSlice.js
+
+	In that import createSlice and initialize initial state..
+
+	In createSlice method add name, initialState and reducer object which has actions/ functions like increment,decrement...
+
+	export these functions
+
+import this counterslice in store and give it to reducer obj as key value..
+
+Now to access the central state values we use useSelector and to update we import useDispatch from react redux
