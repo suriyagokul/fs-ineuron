@@ -1,0 +1,113 @@
+https://google.com/search?q=ineuron
+
+https://google.com ---> domain
+
+/search ---> path
+
+? = query string begins
+
+q = ineuorn means key and value..
+
+  q is key and ineuron is value
+
+& is a separator
+
+
+NODE JS Architecture
+
+	Contains 3 major things
+
+		1) Event Queue
+	
+		2) Event Loop
+
+		3) Thread Pool
+
+	Whenever we requests it will went into event queue.
+
+	Later event loop checks if it requires any compputational power,connection with database or connection with file system..
+
+	If it requires conn with db, comp power then that particular request sends to thread pool by event loop.
+
+	Thread Pool then connects with the db
+
+Server
+
+	Domain
+
+	Port (65535)
+
+		react port- 3000
+		mongodb   - 27017
+		express   - 8000/8080
+	
+	Listen
+
+        server listen for requests
+
+
+Web Application Workflow
+
+	when client/user hits the request it will goto frontend part and if doesn't need any backend data it will show the page..
+
+	If we want any user data from backend, our frontend will requests backend with an api call and then middleware comes into picture..
+
+	First middleware checks for login validations, like user is valid or not, user has access to that particular page ...etc
+
+	and then if all are correct then our backend takes data from the db, and sends response to frontend part.
+
+
+TYPES OF DATABASES
+
+	two types
+
+	1) SQL  
+	
+		(RELATIONAL DB)
+
+		Format - tables
+		
+		ex- mysql
+
+	2) NO SQL 
+
+		(Non RELATIONAL DB)
+
+		Format - json (key value pair)
+
+		ex- mongodb
+
+
+MVC ARCITECTURE
+
+	MODEL VIEW CONTROLLER
+
+	Model 	--> DB
+
+	View  	--> Frontend (presentation)
+
+	Controller  --> Backend logic
+
+
+Middleware 
+
+	It has access to req, res and next
+
+	Which lies in backend to check validations..
+
+	Ex- if u goto amazon and gone to checkout page without login it redirects us to login page which is nothing but middlware tells if any one not logged     
+          in and going to checkout redirect them to login first.
+
+
+Password Hashing
+
+	We use bcrypt to hash the password
+
+Storing Media
+
+	We are doesn't store all our media like videos,images into our db because it will take more bandwith slow.. 
+
+	So what we are gonna do is to store them in services like "CLOUDINARY", "AMAZON S3"..etc and these will give link of that particular media..
+
+	Then we store that link our database.. 
+	

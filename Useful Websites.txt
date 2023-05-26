@@ -36,3 +36,23 @@ https://buildresume.in/edit/template-1       changes inner text...
 
 	// Can give users to change inner text but not innerHTML. It will be security issues if html code changes... 
 
+
+
+HOSTING Ways
+
+
+	1) Vercel
+
+	2) Netlify
+
+	3) Heroku
+
+	4) Render
+
+
+Store Media
+
+
+	1) https://cloudinary.com/
+
+	2) Amazon S3

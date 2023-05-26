@@ -1,0 +1,32 @@
+https://google.com/search?q=ineuron
+
+https://google.com ---> domain
+
+/search ---> path
+
+? = query string begins
+
+q = ineuorn means key and value..
+
+  q is key and ineuron is value
+
+& is a separator
+
+
+NODE JS Architecture
+
+	Contains 3 major things
+
+		1) Event Queue
+	
+		2) Event Loop
+
+		3) Thread Pool
+
+	Whenever we requests it will went into event queue.
+
+	Later event loop checks if it requires any compputational power,connection with database or connection with file system..
+
+	If it requires conn with db, comp power then event loop sends to thread pool.
+
+	Thread Pool then connects with the db

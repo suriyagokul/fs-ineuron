@@ -4,6 +4,26 @@
 
 	EX-   <body class="absolute">
 
+100vw works everywhere whether it is mobile, tablet or bigscreen
+
+if your devices width is 360px then for those devide 100vw = 360px
+if your laptop screen width is 1024px then for those 100vw = 1024 px
+
+vw is able to auto adjust itself according to screen, vw means view-width
+
+vw,vh ===> fits into device width and height
+
+w-[100%] means
+
+	perc is like when you have a element and parent is div then the 100% of element is full width of its parent div
+
+em is parent elements font size
+
+	if we give parent elements font size 18px and we give its child font size 2em then it will become 36px
+
+use hidden with block.. invisible takes space..
+
+ex--> <p class="hidden md:block"></p>
 
 
 Breakpoints       ----->
