@@ -45,9 +45,17 @@ HOSTING Ways
 
 	2) Netlify
 
-	3) Heroku
+	3) Heroku (gone to paid version)
 
 	4) Render
+
+	5) Railway.app (better)
+
+	6) cyclic.sh
+
+	7) deta.sh
+
+we host backend and frontend on two different platforms.
 
 
 Store Media
@@ -55,4 +63,16 @@ Store Media
 
 	1) https://cloudinary.com/
 
+
 	2) Amazon S3
+
+
+Most Famous Frameworks of Node
+
+	1) Express
+
+	2) Koa
+
+	3) hapi.dev	
+
+	4) sails.js

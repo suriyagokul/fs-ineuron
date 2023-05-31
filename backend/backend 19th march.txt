@@ -1,0 +1,82 @@
+HTTP IMP VERSIONS
+
+	Http 1.0 (2016)
+
+	Http 1.1 (2017)
+
+	Http 2.0 (2015)
+
+		Introduced https
+
+		Uses TCP
+
+	Http 3.0 (2022 june)
+
+		Uses UDP on top of it QUIC protocol
+
+Linux commands (can run all the commands on git bash)
+
+~ root directory
+
+pwd
+
+ls
+
+ls -a  (shows hidden files)
+
+ls -l  (gives more details about files user, date..)
+
+ls -al
+
+clear
+
+apt-get update vs apt-get upgrade
+
+	The update command only updates the package list with the latest available versions, however, it does not install or upgrade the package. The upgrade     
+      command actually upgrades and installs the latest versions of packages that are already installed.
+
+uname
+
+uname -r gives agent version
+
+unamr -a
+
+cd foldername
+
+mkdir dirname
+
+touch filename.txt  creates file
+
+rm filename.txt     delete file
+
+when we write ls -l it will show all the permissions for file
+
+	like drwxr-xr..
+
+	Each permission divided into 3 parts
+
+
+		1) admin
+
+		2) group
+
+		3) public
+
+	1-->  Execute
+
+	2-->  Write
+
+	4-->  Read
+
+	For ex if we want to give read, write execute permissions then 1+2+4 = 7
+	To give only write permission = 2
+	Read permission = 4
+	R+X --> 4+1 = 5
+
+	Ex: chmod 721
+
+		It means for admin we are giving r,w,execute permissions because 1+2+4=7 
+			   for group we are giving write perm only i.e 2
+			   for public we are giving exec perm only i.e 1
+
+chmod 777 filename.txt

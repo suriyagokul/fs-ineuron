@@ -1,0 +1,230 @@
+Backend
+
+npm init creates package.json
+
+npm i express mongoose dotenv
+
+Folder Structure
+
+	src 
+	 ->index.js
+	 ->app.js 
+
+	index.js is our starting point
+
+In package.json scripts
+
+	 "start":"node ./src/index.js" or use nodemon 
+
+In package.json add 
+
+	"type":"module"
+
+	  which allows us to write module base code
+
+In app.js
+
+	import express and get app from it..Then export app
+
+IIFE
+
+	IMMEDIATELY INVOKED FUNCTIONAL EXPRESSIONS
+
+	WHICH IS NOTHING BUT WE NEED NOT CALL EXPLICITLY WHENEVER IT MOUNTS THEN THIS FUNCTION WILL AUTOMATICALLY CALLS.
+
+	SYNTAX--> 
+
+		()()
+
+		(()=>{})()
+
+In index.js
+
+	import mongoose
+
+
+	In IIFE using try/catch using async await connect to mongodb..
+
+	   (async()=>{
+	     try{
+		 await mongoose.connect("mongodb://localhost:27017//dbname");  // if we want to connect to local mongodb storage we use this 
+		 console.log("DB connected")
+	     }
+           catch(err){
+	   	 console.log(err);
+	     }
+	   })()
+
+	Then in try blcok we always check for is there express errors are there by 
+
+		import app first
+
+		app.on('error', (err)=>{log(err)})
+
+		then if there are no errors we have to listen for requests using app.listen
+
+
+**IN BACKEND WE HAVE TO IMPORT MODULES WITH FILE EXTENSION**
+
+	Ex: import app from "./src/app.js"
+
+create .env file in root directory and add PORT and mongodb uri to it.
+
+now create folder config in src and index.js in it 
+
+	import dotenv and config it with .env variables 
+	
+	export config
+
+use this config.port and other variables by importing jst config..
+
+In src create utils/authRoles.js to jst add roles for our ecommerce
+
+
+create models/collection.schema.js
+
+import mongoose and create schema object then export it as
+
+	mongoose.model("schemaname", schema obj name we created earlier)
+    
+	here schemaname is stored as a collection name in db in plural form..
+
+	For Ex- mongoose.model("Product", proschema)
+
+		// products with this name collection is created in db
+
+we have various validation options for every document like - 
+
+	{
+
+		name: {
+			type:String,
+
+			maxLength:[120, "please enter below 120 chars"],
+
+			required:["true", "provide username"],
+
+			trim:true
+	  	}
+	},
+	{timestamps: true}
+
+here timestamps will add createdat and updatedat for this name
+
+**It's bad idea to write client side validations**
+
+	Because hackers can bypass client side validations using tools like "BURP SUITE" and can send malicious data directly to server..
+
+	because of doesn't having server side validation that malicous data will sent to server..
+
+
+Whenever we asks a particular data with find it will give data of all fields like name,email, password,profilepic...
+
+	But password is secure we doesn't to grab that then what we can do is:
+
+		password:{
+			select:false
+		}
+
+	By default it will not bring this password but if we want to access it explicitly we provide and then it will give..
+
+
+we can provide default values for the fields
+
+	role:{
+	  type:String,
+        enum:["admin", "user"],   // we are limiting/restricting user to provide roles from one of these
+	  default:"user"            // by default role is user
+	}
+
+
+How FORGOT PASSWORD WORKS IS:
+
+	WHENEVER USER CLICKS ON RESET PASSWORD WITH AN EMAIL WHICH IS FOUND IN OUR DB, THEN WE STORE A COPY OF TOKEN IN THE DB AND SEND A COPY OF TOKEN TO    
+      USER MAIL.
+	
+	IF THE TOKEN FROM MAIL AND TOKEN IN OUR DATABASE MATCHES WITHIN THE EXPIRY TIME THEN WE ALLOW TO CHANGE..
+
+	FIELDS ARE LIKE:
+
+		forgotPasswordToken: String,
+		forgotPasswordExpiry: Date
+
+
+BCRYPTJS
+	
+	NOT USE bcrypt use bcryptjs which is more optmised one
+
+	USED TO ENCRYPT
+
+
+**
+git rm -r --cached Folder_name (remove the directory from git but not delete it from the filesystem/locally)
+
+
+** We can use hooks provided by mongoose to do some action/something before an event occurs..
+
+	For Example: before saving password into db we have to encrypt it and then store..
+
+	It's like middleware
+
+		const schema = new Schema({ /* ... */ });
+		schema.pre('save', function(next) {    // we must not write arrow functions in this hooks 
+  		// do stuff
+  		next();
+		});
+
+	next allows us to go and execute next middleware function which presents.
+
+	**The next() function could be named anything, but by convention it is always named “next”. To avoid confusion, always use this convention.**
+
+	**To load the middleware function, call app.use(), specifying the middleware function.**
+	
+	EXAMPLE - 1
+	
+	const myLogger = function (req, res, next) {
+  		console.log('LOGGED')
+  		next()
+	}
+
+	app.use(myLogger)  // myLogger is a middleware function which app is using
+
+	app.get('/', (req, res) => {
+  		res.send('Hello World!')
+	})
+
+	here first whenever / route requested by client first myLogger middleware function executs and prints logged to console and passes control to next -  
+      middleware function if presents
+	
+	EXAMPLE - 2
+
+	
+	const requestTime = function (req, res, next) {
+  		req.requestTime = Date.now()              
+		// here we are sending request with requestTime variable property can then be accessed by subsequent middleware functions or route handlers.
+  		next()
+	}
+
+	app.use(requestTime)  // requestTime is a middleware
+
+	app.get('/', (req, res) => {
+  
+		let responseText = 'Hello World!<br>'
+  		responseText += `<small>Requested at: ${req.requestTime}</small>`
+  		res.send(responseText)
+	})
+
+
+JWT 
+
+	JSONWebToken which creates a long string and hides some data in it which is nothing but payload we passes..
+
+	It takes three things 
+
+		1) payload/data
+		
+		2) JWT_SECRET
+
+		3) expiresIn
+
+	

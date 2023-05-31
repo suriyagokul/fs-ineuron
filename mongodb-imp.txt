@@ -1,0 +1,73 @@
+Download mongodb community server and install.It will automatically installs mongodb compass which is gui..
+
+It doesn't install mongosh i.e mongoshell we have to download and install it from-->
+
+	https://www.mongodb.com/try/download/shell
+
+Goto Environment 	Variables and edit user variablew with this path C:\Program Files\MongoDB\Server\6.0\bin
+
+Now open command prompt start the server by --
+
+	mongod  (WHICH STARTS THE SERVER I.E DEAMON)
+
+Now open another cmd and type
+
+	mongosh  (to open shell)
+
+
+If u don't set the path then OPEN CMD
+
+	GOTO C:\Program Files\MongoDB\Server type mongod
+
+	In another cmd GOTO C:\Program Files\MongoDB\Server type mongosh
+
+Give path where to store the db --> 
+	
+	create folder data\db in c then in cmd type 
+
+	mongod --dbpath "C:\data\db"
+
+	
+MONGODB VERSION --> 6.0.5
+
+
+commands
+
+
+show dbs
+
+use dbs  (create db if doesn't exits)
+
+show collections
+
+CRUD OPERATIONS --->
+
+
+db.collection_name.find() (to get all documents in a collection)
+
+studentsdb> db.InterFirstYear.findOne({marks:320})
+
+studentsdb> db.InterFirstYear.find({name:'sinu'})  (gives all documents having name sinu)
+	
+
+studentsdb> db.InterFirstYear.insertOne({name:'sinu', marks:550})
+
+studentsdb> db.InterFirstYear.insertMany([{name:'srikar', marks:556}, {name:'bharat', marks:800}])
+
+studentsdb> db.InterFirstYear.updateOne({name:'srikar'}, {$set: {name:'kona'} })  
+
+studentsdb> db.InterFirstYear.updateMany({name:'sinu'}, {$set: {name:'ravi'} })
+
+studentsdb> db.InterFirstYear.updateMany({}, {$rename: {"name":'lastname'}} )
+
+Atomic Operators:
+
+	$set, $push, $inc,$mul, $gt (greater than), $lt, $lte, $gte (>=), $eq (equalty), $ne (inequality), $max, $min
+
+
+studentsdb> db.InterFirstYear.deleteOne({lastname:"bharat"})
+
+studentsdb> db.InterFirstYear.deleteMany({lastname:"ravi"})
+	
+
+	
