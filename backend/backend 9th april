@@ -1,0 +1,33 @@
+mongoose create vs save
+  
+    save() can only be used on a new document of the model
+    create() can be used on the model. 
+    
+    Ex: we can use any one of two methods 
+    
+      exports.createTour = async (req, res) => {
+        // method 1
+        const newTour = await Tour.create(req.body);
+
+        // method 2
+        const newTour = new Tour(req.body);
+        await newTour.save();
+      }
+     
+Use Error class object to throw server errors
+
+  throw new Error("please provide details")
+  
+  
+Ref collections
+  
+    category: {}  (category collection)
+    
+    In Product Collection 
+    
+        categoryId {
+          type:monogoose.Schema.Types.ObjectId,
+          ref:Category
+        }
+  
+    
