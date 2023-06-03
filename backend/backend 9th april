@@ -30,4 +30,14 @@ Ref collections
           ref:Category
         }
   
+  
+localStorage vs Cookies
+
+     Cookies are primarily for reading server-side.
+     Local storage can only be read by the client-side. So the question is, in your app, who needs this data — the client or the server?
+
+    localstorage stores in browser side
+    cookies stored in browser and server side
     
+    localstorage has no expiration until browser memory is purged
+    cookies has expiration which we can set manually
