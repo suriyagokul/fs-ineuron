@@ -17,6 +17,8 @@ git push -u origin main
 
 git status ---> to see untracked files
 
+To change commit message
+git commit --amend -m "new commit message" and then git push -f origin main
 
 By default git will be preinstalled in macintosh.
 
