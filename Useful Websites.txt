@@ -55,6 +55,8 @@ HOSTING Ways
 
 	7) deta.sh
 
+We also use digitalocean and aws beanstalk to publish.
+
 we host backend and frontend on two different platforms.
 
 
