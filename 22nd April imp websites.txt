@@ -29,5 +29,5 @@ Passport JS --> Authentication Service
 JSdocs ---> Create Beautiful Comments
 
 
-Lottie Animations ---> to work with animations
+Lottie Animations, Framer Motion, React Spring, React Motion... ---> to work with animations
 
