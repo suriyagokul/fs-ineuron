@@ -26,6 +26,8 @@
 	 
 	5) https://html-article.hashnode.dev/create-vscode-extension
 
+ 	6) https://surya-542.medium.com/vscode-hack-57007188b0aa  (Undo Deleted files/folders of vscode)
+
 ## heading 2 using two hashes /##
 ### heading 3
 #### heading 4
