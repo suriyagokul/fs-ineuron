@@ -1,0 +1,51 @@
+SetUp For Firebase
+
+	Goto Firebase Console
+
+	Create Project
+
+	Then goto home dashboard i.e project overview
+
+	Click on web symbol i.e </> (for creating new app)
+ 
+	Now give nickname of project
+
+	Click next for install sdk
+
+	Firebase install cli copy that command
+
+	Click continue to the console
+
+	paste that command inside our project to install i.e	
+
+		npm install -g firebase-tools
+
+	After completing complete frontend goto terminal 
+
+		type--> firebase login
+
+	firebase init
+		
+		Goto this option by arrow keys-->  Hosting: Configure files for firebase hosting and set up github action deploys
+	
+		And click spacebar
+
+		Then select use an existing project
+
+		Select your application from firebase console my case it is netflix-clone
+
+		Then it asks for what do you want as your public directory. give it as ----> build
+		
+		Then finally type y and configure github
+
+		After completion we will get build folder with only single file
+
+		now we need to run--> npm run build
+
+		After build completion deploy it to firebase using command
+			
+			firebase deploy
+
+	
+
+	
