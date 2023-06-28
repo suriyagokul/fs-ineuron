@@ -1,0 +1,114 @@
+FRONTEND ROLES
+
+
+ui/ux designer: need figma
+
+ui developer: builds small small components like header, footer, forms.. and give it to frontend engineer.. need html,css,js,react
+
+Frontend engineer: will combine all this components and create complete ui.
+
+
+Backend Roles
+
+
+	Database Designer
+
+	Backend ENGINEER
+
+
+HTML
+
+	<!DOCTYPE HTML> tells it is of type html 5
+
+Element vs Tag
+
+	opening tag + content + closing tag = Element
+ 
+	<bold></bold> tags
+
+	<bold>hello</bold>  = Element
+
+	Html tags holds the html content
+
+
+Block level
+
+  Takes complete browser window width. next element will take place after this
+
+
+Inline
+
+  Not takes complete space/width. next element takes in same row 
+
+
+inline-blcok
+
+	It's inline elelemnt but we need to mention the width of the block
+
+
+
+Metadata = Data about Data
+
+	<meta name="viewport" content="width=device-width" initial-scale=1.0/>
+
+	viewport --> complete fullscreen of browser window
+
+	intial scale =1 means 100% zoom
+	
+		if we zoom in to 120% then inital-scale=1.2
+
+	<meta name="description" content=""/>
+	<meta name="author" content="suriya"/>
+	<meta name="keyword" content="web dev, js"/>
+
+
+
+Iframe
+
+	Embedding of one web page into another web page
+	Youtube gives link of an embed video we can embed it in our web page
+
+		<iframe> src="https://youtube.com/pwskills" height=“100” width=“100” </iframe> 
+
+Anchor tag
+
+	When we click it will open in same tab
+
+	But if we write target=_blank it will open in new tab
+
+		<a href=“google.com”  target=“_blank“ />
+
+
+Semantic tags
+
+	Has some predefined meaning
+
+	Previously in html1,2,34 what happened is we write whole html in multiple nested divs its so irritating. So in html5 they come up with these tags
+
+		Ex: main,header,footer,nav,section,aside,article
+
+Accessibility 
+
+	This means using the correct HTML elements for their intended purpose as much as possible. 
+
+	semantic HTML is the key starting point toward good accessibility practices.
+
+	for button we use button tag, dont write it in div like 
+
+		<div class=“button”></div>
+
+	We use semantics tag for accessibility 
+
+
+Html 5 features 
+
+	Semantic tags
+
+	Audio, video tags
+
+	Email attribute
+
+	Progress tag
+
+	Placeholder attribute 
+
