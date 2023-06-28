@@ -14,6 +14,8 @@
 
 	6) https://ineuron-ai-clone.netlify.app/
 
+    7) https://netflix-clone-7adc3.web.app/
+
 ## My Articles
 	
 	1) https://html-article.hashnode.dev/htmlcss
