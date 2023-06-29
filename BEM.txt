@@ -1,0 +1,17 @@
+BEM: BLOCK ELEMENT MODIFIER is a methodology/ a popular naming convention for classes in HTML and CSS. 
+
+A block is the element in your React component that wraps all other elements. There is only one block per component.
+An Element is within the Block.
+A Modifier represents behavior on an Element or Block.
+
+Ex: 
+
+            
+            <div className="Counter">
+              <button className="Counter__inc">Click me!</button>
+              <button className="Counter__inc Counter__inc--disabled" disabled>up</button>
+            </div>    
+
+Counter ---> Block
+inc     ---> Element
+disabled -> action/modifier
