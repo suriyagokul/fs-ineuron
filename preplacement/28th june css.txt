@@ -1,0 +1,69 @@
+CSS
+
+
+Styling Methods
+
+	1) Inline
+
+	2) Internal
+
+	3) External
+
+
+	Whenever we write styling inside a tag then it is "Inline Styling"
+
+	Whenever we write styling inside a same file but not within a tag then it is "Internal Styling"
+
+		In head
+
+	Whenever we write styling in external file then it is "Internal Styling"
+
+
+Box Model
+
+	We have margin and padding in box model
+
+	Margin --> Outside spacing, Padding --> Inside Spacing
+
+
+
+Css Selectors
+
+	Element,class,id selector
+
+Css 3 Selectors
+
+	Element,class,id selector and Pseudo selector
+
+Pseudo Selector = Pseudo Class, Psuedo Element
+
+A pseudo-class is used to define a special state of an element.
+For example, it can be used to:
+Style an element when a user mouses over it
+Style visited and unvisited links differently
+Style an element when it gets focus
+
+A CSS pseudo-element is used to style specified parts of an element.
+For example, it can be used to:
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element
+
+Positions in CSS
+
+      By default position is static
+
+      We have different other positions like fixed,sticky,absolute,relative 
+
+Relative: From its current position it will move 
+
+Absolute: From its parent position default it will move according to <body> 
+
+    	  If we give parent container “relative” and child container ”absolute” child will move based on this parent.
+
+Fixed: It will fix at a particular position like navbars 
+
+	If we give position:fixed; top:10px;
+	It will fix at 10px from top
+
+
+Sticky: It will be in particular place when don't scroll. As soon as we scroll the page it will goes to top and stck at that position.
