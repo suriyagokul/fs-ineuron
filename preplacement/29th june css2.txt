@@ -1,0 +1,113 @@
+Css Units: 
+
+By default in browser in 16px font is displayed
+
+px
+vh - viewport height
+vw - viewport width
+
+rem - 
+	r stands for relative
+
+	Parent Size
+
+	parent element font size = 24px
+
+	if we give child to 2rem i.e 48px
+
+em  - Default Size
+      
+      Default font size = 16px
+      
+      1em = current font size i.e 16px
+      
+      2em = double the current font size i.e 32px
+
+
+Media Queries: 
+
+    BreakPoints: Are the specific points or ranges of the screen widths where the layout and styling of a webpage can be adjusted.
+
+	Majorly we handle Screen Sizes:		
+
+		Small  640px-768px (mobile phones)
+ 
+		Medium 768px-1024px (tablets)
+	
+		Large upto 1280 (laptops)
+
+		Extra Large
+	
+	@media screen (min-width:550px) and (max-width:720px){
+		body: { background-color: "red" }
+	}
+
+	@media (width:700px) exactly at 700px it will apply.. screen is not mandatory
+
+
+Overflow: 
+
+	By default it's: visible
+
+	hidden
+
+	scroll
+
+Variables in CSS:
+
+	Ex: 
+    
+    		<style>
+      			:root {
+        			--primary: purple  // --primary is variable name
+				--color2: red
+      			}
+      			
+			h1 {
+        			color: var(--primary);  // we can access variable using var(var_name)
+      			}
+    		</style>
+  
+		<body>
+      			<h1>Hello World! </h1>
+      			<h1>Hello Aakash! </h1>
+      			<h1>Hello Paatal! </h1>
+      			<h1>Hello TapoLok! </h1>
+  		</body> 	
+
+
+Flex and Grid:
+
+	Flex is one Dimensional  (either row or column)
+
+	Grid is two dimensional (row,column)
+
+	gap is used to give space on both row wise and column wise
+
+	flex space around vs space evenly
+	
+		space evenly distributes complete space into equal parts
+
+		whereas In space-around: space between the columns are in same size. space before first column and space after last column is same size  
+
+	Flex Wrap: 
+
+		If a container of 10 items has fixed width and height has given flex.. Then all the items are fit into one row without applying our width 		and height. So when we use flex wrap it will show the no of boxes which are only fit in a row nd remaining comes in next row.
+
+			flex-wrap: wrap 
+
+	1fr means "take 1 fraction of the available space", and since there are no other element defined as fr, it also means "take all available space".
+
+	auto means take space based on its content
+
+	grid-template-columns: how many no of columns u need in a single row
+
+		Ex: grid-template-columns: 1fr 1fr;  // 2 columns with same width
+			
+		    grid-template-columns: 50px 300px; // 2 columns where first column width is 50px and second column width is 300px
+ 	
+	gird-template-rows: It is like height of the row
+
+		Ex: grid-template-rows: 200px; The first row in this grid is 200px high
+
+		    grid-template-rows: 200px 100px; The first row in this grid is 200px high, and the second row is 100px high:
