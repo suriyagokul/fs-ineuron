@@ -21,7 +21,6 @@
     class="flex flex-col items-center h-[100vh] bg-[#B6B6B6] font-[Poppins]"
   >
     <main class="flex flex-col items-center border-none w-full px-24">
-       <h3 id="screen">window</h3>
       <div class="flex items-center h-[100vh] w-full">
         <form
           onsubmit="getData(event)"
@@ -91,7 +90,7 @@
           </div>
         </div>
       </div>
-     
+      <h3 id="screen"></h3>
     </main>
 
     <script>
@@ -136,7 +135,11 @@
         "December",
       ];
 
-      screen.innerHTML += window.innerWidth;
+      let resizefun = function () {
+        screen.innerHTML = window.innerWidth;
+      };
+
+      window.addEventListener("resize", resizefun);
 
       window.addEventListener("DOMContentLoaded", () => {
         const savedLocation = localStorage.getItem("loc_name");
