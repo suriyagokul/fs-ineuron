@@ -90,6 +90,7 @@
           </div>
         </div>
       </div>
+      <h3 id="screen"></h3>
     </main>
 
     <script>
@@ -107,6 +108,8 @@
       let wind = document.getElementById("details5");
       let pressure = document.getElementById("details6");
       let v_line = document.getElementById("line");
+
+      let screen = document.getElementById("screen");
 
       let days = [
         "Sunday",
@@ -131,6 +134,8 @@
         "November",
         "December",
       ];
+
+      screen.innerHTML = window.innerWidth;
 
       window.addEventListener("DOMContentLoaded", () => {
         const savedLocation = localStorage.getItem("loc_name");
@@ -202,3 +207,4 @@
     </script>
   </body>
 </html>
+
