@@ -1,0 +1,69 @@
+HOF, callbacks, functional programming.
+
+Callbacks and functional programming comes under the hof.
+
+setTimeout, setInterval asynchronous functions.
+
+
+Higher Order Functions
+
+	HOF is a function that accepts function as parameters and/or returns a function
+
+	A Callback is a function passed as an argument to another function.
+
+		Ex: setTimeout(()=>{console.log("I am Callback")}, 2000) 
+
+	
+			here ()=>{} in setTimeout is a callback which is an arrow function passed as argument to setTimeout function.
+
+
+		setTimeout is an asychronous function which completes next instructions until it completes the execution of previous.
+
+
+Synchronous Vs Asynchronous
+
+	
+	As its base JavaScript language is synchronous
+
+	Synchronous: Runs line by line doesn't execute next instructions until it completes	
+			
+		    Ex: console.log('First');
+			console.log('Second');
+			console.log('Third');
+
+		    O/P: first 
+			 second 
+			 third
+
+	Asynchronous:Asynchronous code execution allows to execution next instructions immediately and doesn't block the flow because of previous 			     instructions
+
+	
+		Ex: console.log('First');
+
+		    // Set timeout for 2 seconds
+		    setTimeout(() => console.log('Second'), 2000);
+
+		    console.log('Third');
+
+	Instruction in synchronous code executes in a given sequence.	
+	Instructions in asynchronous code can execute in parallel.
+	
+	Each operation waits for the previous operation to complete its execution.	
+	Next operation can occur while the previous operation is still getting processed.
+	
+	Most of the time JavaScript is used as Synchronous code.	
+	Asynchronous JavaScript is preferred in situations in which execution gets blocked indefinitely.
+
+
+Functional Programming
+
+
+	Functional programming is a programming paradigm designed to handle pure mathematical functions
+
+
+	forEach, map, filter, reduce
+
+
+	arr.forEach(num=>console.log(num+=num)
+
+	reduce accepts 3 parameters accumulator, current, default 

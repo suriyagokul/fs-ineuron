@@ -1,0 +1,46 @@
+Js is a single threaded asynchronous programming language..
+
+In JavaScript, a promise is a good way to handle asynchronous operations. It is used to find out if the asynchronous operation is successfully completed or not.
+
+A promise may have one of three states.
+
+Pending
+Fulfilled
+Rejected
+
+Temporal Dead Zone
+
+	A temporal dead zone (TDZ) is the block where a variable is inaccessible until the moment the computer initializes it with a value
+	
+
+	Ex:  Below is called Hoisting
+	
+	   console.log(a); // undefined
+
+	   var a=2;
+
+	   console.log(a); // reference error. variable a is in temporal dead zone. It's there in script as a:undefined but We can't access it. 
+
+	   let a=2 or const a=2;
+
+
+
+undefined vs null
+
+	
+	If a variable is declared but the value is not assigned, then the value of that variable will be undefined.
+
+	In JavaScript, null is a special value that represents an empty or unknown value
+
+
+		function test(x = 1) {
+  			console.log(x);
+		}
+
+		// passing undefined
+		// takes default value 1
+		test(undefined); // 1  or test(null) // o/p: null
+
+		
+
+		

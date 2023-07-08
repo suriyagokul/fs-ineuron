@@ -1,0 +1,83 @@
+Node JS Architecture
+
+	Contains 3 main things
+
+		1) Event Queue
+
+		2) Event Loop
+
+		3) Thread Pool
+
+	Event Queue is the place where all the events get stored.
+
+        Whenever a database call is needed Event Loop brings the Events in the Event Queue to Thread Pool.
+
+	Then Thread Pool is responsible for database call. 
+
+
+Closure
+
+	Generally, closures are used for data privacy.
+
+	Making Global variables private(local) with closures
+
+	Ex:
+
+		let a = 0;
+		
+		function sum() {
+    	
+			function increaseSum() {
+
+			        // the value of a is increased by 1
+        			return a = a + 1;
+    			}
+    		return increaseSum;
+		}
+
+
+		const x = sum();
+		console.log(x()); // 1
+		console.log(x()); // 2
+		console.log(x()); // 3
+		a = a + 1;
+		console.log(a); // 4
+
+		Here we are changing a from outside
+
+		But when you move a to inside sum then it's local to sum. We can't change value from outside.
+
+		function sum(){
+			let a = 0;
+		}
+
+		By this way closures make privacy
+
+
+Lexical Scope
+
+	It is a scope of how child/inner function accessing parent elements
+
+	Ex:
+
+		var scope = "I am global";
+		
+		function whatismyscope(){
+		
+		//   var scope = "I am just a local";
+   		
+		function func() {    
+		
+		//   var scope = "Inner"
+		
+		     return scope;
+		}  
+   		
+		return func;
+		}
+
+		let res = whatismyscope()
+
+		console.log(res())
+
+	Here scope variable checks first in inner scope and then if inner func doesn't have scope variable, it checks in global scope
