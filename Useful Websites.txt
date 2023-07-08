@@ -83,3 +83,39 @@ Most Famous Frameworks of Node
 Wappalyzer Chrome Extension to know technologies used by any website
 
 Color Picker Chrome Extension 
+
+
+Different SMTP Email Services/Providers which gives host, port...etc are -->
+
+	
+	1) Brevo(Send in Blue)
+
+
+	2) Amazon Simple Email Service (SES) 
+
+	
+	3) MailGun 
+
+	
+	4) MailChimp
+
+	
+	5) PostMark
+
+
+	6) Mailtrap --> FOR TESTING
+
+
+
+Nodemailer --> To send mails
+
+
+Passport JS --> Authentication Service
+
+
+JSdocs ---> Create Beautiful Comments
+
+
+Lottie Animations ---> to work with animations
+
+
