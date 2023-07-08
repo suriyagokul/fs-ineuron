@@ -78,3 +78,8 @@ Most Famous Frameworks of Node
 	3) hapi.dev	
 
 	4) sails.js
+
+
+Wappalyzer Chrome Extension to know technologies used by any website
+
+Color Picker Chrome Extension 
