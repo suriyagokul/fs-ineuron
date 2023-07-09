@@ -1,0 +1,8 @@
+setTimeout(function() {
+  // Code to be executed after the delay
+}, 1000); // Delay of 1000 milliseconds (1 second)
+
+
+setInterval(function() {
+  // Code to be executed at each interval
+}, 2000); // Interval of 2000 milliseconds (2 seconds)
