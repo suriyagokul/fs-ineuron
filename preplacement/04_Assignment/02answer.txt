@@ -1,0 +1,7 @@
+Temporal Dead Zone: It is a state where variable is there but we can't accessible.And during this zone javascript will always through
+a reference error if anyone tries to access those variables. 
+
+  For Example: console.log(a) // here variable a is in temporal Dead Zone
+               let a=20;
+               console.log(a) // here a is out of temporal dead zone
+        
