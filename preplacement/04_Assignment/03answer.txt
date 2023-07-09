@@ -1,0 +1,4 @@
+The main difference between var and let is the scope in which they are accessible.
+Variables declared with var are function-scoped or globally scoped (if declared outside any function). They have function-level 
+scope and can be accessed anywhere within the function they are declared in.
+Variables declared with let are block-scoped. They have block-level scope and are limited to the block (within curly braces) where they are declared.
