@@ -1,0 +1,6 @@
+call, apply, and bind are methods available on JavaScript functions and are used to manipulate the value of this within the function.
+call and apply are used to invoke a function with a specified this value and arguments. The only difference between them is how the arguments are passed.
+call: Accepts arguments as comma-separated values.
+apply: Accepts arguments as an array.
+bind is used to create a new function with a specific this value and any initial arguments. It returns a new function that, when called, has the 
+specified this value and arguments.
