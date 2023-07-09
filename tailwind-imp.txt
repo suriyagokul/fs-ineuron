@@ -1,3 +1,10 @@
+<style>
+      html,
+      body {
+        overflow-x: hidden; /* Disable horizontal scrolling */
+      }
+    </style> for stop scrolling in smaller screens
+
 *** While desigining responsive website our width oof the page may decreases not fully fits with our size of screen..
 
     To make it full width of the screen we have to use ----->  absolute as a position
