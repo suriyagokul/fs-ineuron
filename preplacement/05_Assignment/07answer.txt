@@ -1,0 +1,2 @@
+async is a keyword that is used to define an asynchronous function. An asynchronous function returns a Promise that is resolved with the value returned by the function.
+await is used inside an async function to pause the execution of the function until a Promise is resolved or rejected. It can only be used inside an async function.
