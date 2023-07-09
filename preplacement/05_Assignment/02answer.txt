@@ -1,0 +1,5 @@
+Web APIs (Application Programming Interfaces) are interfaces provided by web browsers that allow developers to interact with various functionalities
+and features of web platforms.
+Web APIs provide methods and properties to access and manipulate web browser features, such as DOM manipulation, network requests (fetch API), 
+geolocation, localStorage, IndexedDB, and more.
+Examples of Web APIs include the DOM API, Fetch API, Web Storage API, Geolocation API, and many others.
