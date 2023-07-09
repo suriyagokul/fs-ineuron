@@ -1,0 +1,6 @@
+Object-Oriented Programming (OOP) is a programming paradigm that organizes code into objects, which are instances of classes.
+OOP emphasizes the concepts of encapsulation, inheritance, and polymorphism.
+Encapsulation allows data and methods to be bundled together within an object, hiding the internal implementation details and providing a public 
+interface to interact with the object.
+Inheritance allows objects to inherit properties and methods from a parent class, promoting code reuse and creating hierarchical relationships.
+Polymorphism allows objects of different classes to be treated as objects of a common superclass, enabling flexibility and dynamic behavior.
