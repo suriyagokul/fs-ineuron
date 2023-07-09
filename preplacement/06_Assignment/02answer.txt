@@ -1,0 +1,4 @@
+In JavaScript, the this keyword refers to the current object or context in which the code is being executed.
+Its purpose is to provide a reference to the object that owns the currently executing code.
+The value of this depends on how a function is called or the context in which it is used.
+Inside a constructor, this refers to the newly created object instance.
