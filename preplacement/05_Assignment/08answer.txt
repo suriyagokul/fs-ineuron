@@ -1,0 +1,4 @@
+The try and catch blocks are used for error handling in JavaScript.
+Code within the try block is executed, and if an exception occurs, it is caught by the catch block. This prevents the program from crashing and allows 
+you to handle the error gracefully.
+It is important to use error handling to ensure that unexpected exceptions or errors do not cause the entire program to halt.
