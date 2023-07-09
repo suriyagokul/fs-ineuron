@@ -1,0 +1,14 @@
+
+Destructuring is a feature in ES6 that allows you to extract values from objects or arrays into individual variables.
+Object destructuring:
+javascript
+Copy code
+const person = { name: 'John', age: 30 };
+const { name, age } = person;
+console.log(name, age); // Output: John 30
+Array destructuring:
+javascript
+Copy code
+const numbers = [1, 2, 3];
+const [a, b, c] = numbers;
+console.log(a, b, c); // Output: 1 2 3
