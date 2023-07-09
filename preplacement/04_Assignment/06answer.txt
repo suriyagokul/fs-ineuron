@@ -1,0 +1,16 @@
+💡 Q.6 What is template literals in ES6 and how do you use them?
+
+Template literals, also known as template strings, are a feature in ES6 that allow for easier string interpolation and multiline strings.
+They are denoted by backticks ( ) instead of single or double quotes.
+Template literals support embedded expressions using ${expression} syntax, allowing variables or expressions to be directly interpolated within the string.
+Example usage:
+javascript
+Copy code
+const name = 'John';
+const greeting = `Hello, ${name}!`;
+console.log(greeting); // Output: Hello, John!
+
+
+
+
+
