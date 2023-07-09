@@ -1,0 +1,3 @@
+In JavaScript, a class is a template or blueprint for creating objects that encapsulate data and behavior.
+Introduced in ES6, the class syntax provides a more structured and familiar way to define objects and their properties and methods.
+Classes are instantiated using the new keyword to create object instances based on the class definition.
