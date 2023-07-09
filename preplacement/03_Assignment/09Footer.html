@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Poppins"
+    />
+    <title>Gallery</title>
+    <style>
+      html,
+      body {
+        overflow-x: hidden; /* Disable horizontal scrolling */
+      }
+      h2 {
+        color: white;
+      }
+      h4,
+      p {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body class="font-[Poppins] bg-black h-[100vh]">
+    <footer class="p-10 md:p-14">
+      <div class="flex flex-col md:flex-row md:items-center h-[100vh]">
+        <div class="md:w-[30%] md:h-[40vh]">
+          <h2>One Card</h2>
+          <p class="mt-3 mb-3 leading-loose">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
+            cupiditate sunt minima fugit.
+          </p>
+        </div>
+        <div class="md:w-[20%] md:h-[40vh]">
+          <h2 class="mb-3">Navigation</h2>
+          <h4 class="md:mb-2">Home</h4>
+          <h4 class="md:mb-2">About Us</h4>
+          <h4 class="md:mb-2">Careers</h4>
+          <h4 class="md:mb-2">Offers</h4>
+        </div>
+        <div class="md:w-[20%] md:h-[40vh]">
+          <h2 class="mb-3 mt-3 md:mt-0">Support</h2>
+          <h4 class="md:mb-2">FAQ</h4>
+          <h4 class="md:mb-2">Cookies Policy</h4>
+          <h4 class="md:mb-2">Terms of Service</h4>
+          <h4 class="md:mb-2">Support</h4>
+        </div>
+        <div class="w-[30%] h-[40vh] flex flex-col">
+          <h2 class="mb-3 mt-3 md:mt-0">Newsettler</h2>
+          <input
+            type="email"
+            placeholder="email"
+            class="rounded-md border-none outline-none px-3 md:py-2"
+          />
+          <button
+            class="bg-sky-600 md:px-5 py-1 mt-3 rounded-md text-white hover:bg-sky-700"
+          >
+            Subscribe
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
