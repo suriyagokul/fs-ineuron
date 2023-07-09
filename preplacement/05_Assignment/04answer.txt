@@ -1,0 +1,4 @@
+Asynchronous code can be handled in JavaScript using various techniques, including:
+Callbacks: Passing functions as arguments to handle asynchronous results.
+Promises: Representing a future value or event that can be acted upon.
+Async/await: Using the async keyword to define an asynchronous function and the await keyword to pause execution until a promise is resolved.
