@@ -1,0 +1,11 @@
+
+In ES6, you can define default parameter values for function parameters by assigning a value directly in the function parameter declaration.
+Example:
+javascript
+Copy code
+function greet(name = 'Guest') {
+  console.log(`Hello, ${name}!`);
+}
+greet(); // Output: Hello, Guest!
+greet('John'); // Output: Hello, John!
+
