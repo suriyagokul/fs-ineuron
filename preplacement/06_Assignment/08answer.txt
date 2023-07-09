@@ -1,0 +1,4 @@
+Encapsulation is the bundling of data and related methods within a class, hiding the internal implementation details from the outside world.
+Its purpose is to ensure data integrity, provide access control, and enforce modularity by exposing a public interface for interacting with the
+object while hiding the internal state.
+Encapsulation helps in organizing code, reducing dependencies, and maintaining the integrity and consistency of data.
