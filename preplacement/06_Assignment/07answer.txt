@@ -1,0 +1,4 @@
+Inheritance is a mechanism in OOP that allows a class to inherit properties and methods from another class, known as the parent or base class.
+Its purpose is to promote code reuse, reduce duplication, and establish hierarchical relationships between classes.
+Inheritance allows child classes to inherit and extend the functionality of the parent class, enabling the creation of specialized classes while maintaining
+a common structure and behavior.
