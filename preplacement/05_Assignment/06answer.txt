@@ -1,0 +1,5 @@
+Promises are objects that represent the eventual completion or failure of an asynchronous operation, and its resulting value.
+Three important methods of promises are:
+then(): Attaches callbacks for the fulfillment or rejection of the promise.
+catch(): Attaches a callback to handle the rejection of the promise.
+finally(): Attaches a callback that is executed when the promise is settled (fulfilled or rejected), regardless of the outcome.
