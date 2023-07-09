@@ -1,0 +1,6 @@
+
+
+Both map and forEach are array methods in JavaScript.
+The main difference is that map creates a new array by applying a provided function to each element of the original array, whereas forEach executes a provided function for each element of the array without creating a new array.
+map returns a new array with the results of the provided function applied to each element, while forEach does not return anything.
+If you need to modify or transform an array, you generally use map. If you simply want to iterate over the elements of an array, you can use forEach.
