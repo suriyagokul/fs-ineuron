@@ -1,0 +1,6 @@
+💡 Q.5 What is the difference between let and const?
+
+let and const are both block-scoped variables introduced in ES6.
+The main difference is that let allows reassignment of its value, while const variables are read-only and cannot be reassigned once they are defined.
+However, it's important to note that const does not make objects or arrays immutable. It only ensures that the binding to the variable itself cannot be 
+changed. The properties of a const object or array can still be modified.
