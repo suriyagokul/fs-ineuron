@@ -1,0 +1,3 @@
+Callbacks are functions that are passed as arguments to another function and are executed later when a certain event occurs or when an asynchronous operation completes.
+Callback Hell refers to the situation where multiple nested callbacks are used, leading to complex and hard-to-read code due to the pyramid-like structure.
+Callback Hell can occur when dealing with multiple asynchronous operations, resulting in deeply nested code and a loss of code readability and maintainability.
