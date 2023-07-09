@@ -1,0 +1,4 @@
+Abstraction is a fundamental principle of OOP that focuses on exposing essential information while hiding unnecessary details.
+Its purpose is to simplify complex systems by breaking them down into manageable and modular units, allowing users to interact with the system using a
+simplified and consistent interface.
+Abstraction helps in reducing complexity, improving code maintainability, and providing a level of abstraction that hides implementation details.
