@@ -1,0 +1,4 @@
+Synchronous operations execute one after the other in a sequential manner. Each operation waits for the previous one to complete before moving to the next operation.
+Asynchronous operations, on the other hand, do not wait for the previous operation to complete. 
+They are non-blocking and allow multiple operations to run concurrently. Asynchronous operations typically involve callbacks, 
+Promises, or async/await syntax to handle the results.
