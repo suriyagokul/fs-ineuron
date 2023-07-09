@@ -1,0 +1,4 @@
+fetch is a modern JavaScript API used to make network requests (HTTP requests) to a server and handle the response asynchronously.
+It provides a more flexible and powerful alternative to the older XMLHttpRequest (XHR) object.
+fetch returns a Promise that resolves to the Response object representing the response from the server.
+It allows you to make various types of requests, such as GET, POST, PUT, DELETE, etc., and provides methods to handle the response data.
