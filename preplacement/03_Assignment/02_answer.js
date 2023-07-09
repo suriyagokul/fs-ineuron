@@ -1,0 +1,3 @@
+Media queries are a feature in CSS (Cascading Style Sheets) that allow you to apply different styles to your web page based on various characteristics of the user's device or browser. Media queries are used to create responsive designs, which can adapt and optimize the layout and appearance of a website for different screen sizes and devices.
+
+Media queries work by specifying certain conditions or rules that need to be met for the associated CSS styles to be applied. These conditions can target attributes such as the viewport width and height, device type, resolution, orientation (landscape or portrait), and more.
