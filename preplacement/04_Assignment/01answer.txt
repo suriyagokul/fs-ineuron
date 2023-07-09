@@ -1,0 +1,8 @@
+Hoisting: It is JavaScript's default behavior of moving all declarations to the top of the current scope.
+
+  It's actually a problem caused due to var.
+
+Ex: console.log(a) // o/p: undefined
+    var a=10
+
+  If we use let and const instead of var then it gives ReferenceError
