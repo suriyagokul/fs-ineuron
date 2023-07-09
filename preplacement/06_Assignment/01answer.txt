@@ -1,0 +1,3 @@
+A constructor is a special method in a class that is used for initializing objects of that class.
+The purpose of a constructor is to set up the initial state of an object by assigning values to its properties or performing other necessary setup operations.
+In JavaScript, a constructor is defined using the constructor keyword within a class.
