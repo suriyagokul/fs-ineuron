@@ -1,0 +1,13 @@
+ECMAScript 6 (ES6), also known as ECMAScript 2015, introduced several significant features, including:
+Arrow functions
+Classes
+Modules
+Template literals
+Destructuring assignment
+Default parameters
+Rest and spread operators
+Promises
+Let and const declarations
+Enhanced object literals
+Iterators and generators
+and more.
