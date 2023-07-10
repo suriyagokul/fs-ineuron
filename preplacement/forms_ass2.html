@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Input Box App</title>
+</head>
+<body>
+  <div>
+    <input type="text" id="inputBox" />
+    <button id="submitBtn">Submit</button>
+  </div>
+
+  <ul id="outputList"></ul>
+
+  <script>
+    const inputBox = document.getElementById('inputBox');
+    const submitBtn = document.getElementById('submitBtn');
+    const outputList = document.getElementById('outputList');
+
+    submitBtn.addEventListener('click', function() {
+      const userInput = inputBox.value;
+      if (userInput.trim() !== '') {
+        const listItem = document.createElement('li');
+        listItem.textContent = userInput;
+        outputList.appendChild(listItem);
+        inputBox.value = '';
+      }
+    });
+  </script>
+</body>
+</html>
