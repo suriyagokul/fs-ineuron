@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Responsive Navbar</title>
+  <style>
+    .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    .menu {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .menu {
+        display: block;
+      }
+
+      .nav-items {
+        display: none;
+      }
+
+      .nav-items.open {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="menu" onclick="toggleMenu()">☰</div>
+    <ul class="nav-items">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const navItems = document.querySelector('.nav-items');
+      navItems.classList.toggle('open');
+    }
+  </script>
+</body>
+</html>
