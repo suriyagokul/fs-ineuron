@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Modal Window</title>
+  <style>
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+    }
+
+    .modal {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #fff;
+      padding: 20px;
+      display: none;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="openModal()">Open Modal</button>
+
+  <div class="overlay" onclick="closeModal()"></div>
+  <div class="modal">
+    <h2>Modal Content</h2>
+    <p>This is the modal content.</p>
+    <span class="close-btn" onclick="closeModal()">✖</span>
+  </div>
+
+  <script>
+    function openModal() {
+      const overlay = document.querySelector('.overlay');
+      const modal = document.querySelector('.modal');
+
+      overlay.style.display = 'block';
+      modal.style.display = 'block';
+
+      document.body.style.overflow =
