@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Validation</title>
+</head>
+<body>
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <!-- Add other form fields here -->
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('myForm');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      if (form.checkValidity()) {
+        // Submit the form
+        console.log('Form submitted successfully!');
+        form.reset();
+      } else {
+        // Display error messages or handle form validation errors
+        console.log('Form validation failed!');
+      }
+    });
+  </script>
+</body>
+</html>
