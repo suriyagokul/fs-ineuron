@@ -1,0 +1,55 @@
+JavaScript
+
+	Variables
+	
+	Operators
+
+	Conditions
+	
+	Functions
+
+	Loops
+
+	Array and Object
+
+	
+	
+	Hoisting
+
+	Global Execution Context
+
+	How Js code get executed
+	
+	How Js functions get executed
+
+	Let vs Var vs const
+
+
+	
+
+	Closure
+
+	Promises (async, await, all, .then, .catch)
+
+
+How JS code gets executed?  We have to explain all these if we want to explain Hositing
+
+	Global Execution Context Contains Two Things- Code and Memory
+
+	1) First Entire Code will Scan
+	
+	2) While Scanning all the variables set to be undefined	in the code block and function will also placed in code blcok
+
+	3) After Scanning, while executing memory will be allocated and variables will be assigned to value in the memory
+
+	4) For functions again it has code and memory. And again it starts scan from inside the function, repeat above steps
+
+	5) By default browser contains call stack
+
+	6) Call Stack first contains GEC and then if code contins function like sum() then sum will be placed in call stack.
+
+	7) After sum() gets executed it will remove from call stack
+
+	Go to Browser > inspect > add debug points for index.js > on right bar check on call stack, global, local variables
+
+	On call stack first time on first line of code scans it will GEC anonymous to call stack
