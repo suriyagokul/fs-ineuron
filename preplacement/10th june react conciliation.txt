@@ -1,0 +1,81 @@
+React Main Topics
+
+DOM & virtual DOM
+- state , prop, component
+- react component lifecycle
+- Hooks [useEffect, useState, useContext] — context API (Prop drilling)
+- Class Based Components & Function based components
+- React Router (useContext)
+- what is state management
+- useEffect IMP
+- react recompilation
+- Redux (how to write, why to write)
+
+
+React Reconciliation 
+
+	Def: The reconciliation process makes React work faster. Reconciliation is the process through which React updates the Browser DOM.
+
+	Real Dom has a copy of virtul DOM
+
+	Again we have another VirtualDom which is a copy of previous virtual dom
+
+	If anything updates in second virtual DOM By using "diffing" algorithm it compares the two virtual dom's
+
+	Then If there is difference, the updates of second virtual dom were updated in real dom
+
+	This complete process is called "React Reconciliation"
+
+
+React Component Life Cycle
+
+	Every Component has three stages and Each component has several “lifecycle methods” 
+
+		1) Mounting  --> componentdidMount  (adding/putting nodes to dom)
+
+		2) Updating  --> componentdidupdate  (making changes to nodes already in the dom)
+
+		3) UnMount   --> componentwillunmount  (removing nodes from the dom)
+		
+
+	render() => will render complete jsx and shows in the browser
+
+
+State 
+
+	
+	State generally refers to data or properties that need to be tracking in an application.
+
+
+Hooks
+
+	Hooks are a new addition in React 16.8. They let you use state and other React features without writing a class. 
+
+	Inbuilt Hooks
+
+	Custom Hooks
+
+	Use Effect --> Side Effects
+
+		Side Effects can be everything that might be happening in your application which is not related to ui rendering.
+
+		Examples: Sending HTTP REQUESTS, Storing data in browsers, Working with timer functions.
+
+
+Stateful vs Stateless Components
+
+	A  component that manages the state in class-based with state or functional with useState is called "Stateful Component"
+		
+		In some component, the data keeps changing, for example, watching the cricket score etc.
+
+		In most of the cases, the class-based components extend react component.
+
+		Stateful components can use react life cycle hooks
+
+	A component that has no internal state management in it is called "Stateless Component"
+
+		In some component, the data remains the same, for example, showing the static data.
+
+		Function components are simply functions that receive the props and return the JSX code.
+
+		Stateless components can not use the react life cycle hooks

@@ -1,0 +1,59 @@
+MVC	Model View Controller
+
+MVC - Architectural pattern that separates applications into three main categories; the model, the view, and the controller.
+
+It helps you breakup the frontend and backend code into separate components
+
+Frontend (View) will send request to controller
+
+Controller talks with Model(Database)
+
+Model Send response to Controller and Again   controller send response to view.
+
+Monolithic vs MicroServices Architecture
+
+Monolithic consists of single central database which is a problem
+
+	Because for example - If Family in one house if any leakage occurs it will problem to entire family
+
+	Ex: pwskills
+
+Web Applications usually consists of three parts
+
+	Front End client-side application is written in JavaScript and other languages.
+
+	Back End Server-side application which contains business logic written in java, PHP, Python or some other language.
+
+	Database of whole web application
+
+	Hence the whole web application works as a monolith where every part is dependent on others.
+
+But in MicroServices Architecture big web applications are divided into smaller services, where each web service is responsible for executing a particular set of functionalities
+
+	Ex: Netflix
+
+Small Projects - Monolithic is good/enough
+
+Database
+
+Schema: Simply means Database Design
+
+Sql vs NoSql
+
+	Sql - Relational
+	
+	NoSql - Non Relational 	
+
+Project Needs to be - 
+
+CRUD
+
+Authentication
+
+Payment
+
+Cloud Hosting
+
+Storage
+
+Redux
