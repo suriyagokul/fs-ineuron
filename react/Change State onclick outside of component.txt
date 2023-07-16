@@ -1,0 +1,16 @@
+const openRef = useRef(null);
+
+  // close cart component when we click outside of it
+  useEffect(() => {
+    document.addEventListener(
+      "click",
+      (e) => {
+        if (!openRef.current.contains(e.target)) {
+          setOpen(false);
+        }
+      },
+      true
+    );
+  }, []);
+
+    <div className="h-[80px]  p-5" ref={openRef}>
