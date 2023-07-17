@@ -78,3 +78,7 @@ Theme -
 	ctrl + shift + p (opens command palete)
 	
 	type collapse and select first option and enter
+
+// Open file 
+
+ctrl + p and type file name
