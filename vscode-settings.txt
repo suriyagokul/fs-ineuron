@@ -66,4 +66,15 @@ Theme -
 
 // To open emojis 
 
-Windows . to open emoji board
+	Windows . to open emoji board
+
+
+// To close all tabs
+
+	ctrl + k + w
+
+// To close all opened folders
+
+	ctrl + shift + p (opens command palete)
+	
+	type collapse and select first option and enter
